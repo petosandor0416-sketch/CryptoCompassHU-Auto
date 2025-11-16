@@ -2,10 +2,11 @@ import requests
 import datetime
 import pytz
 import feedparser
+import os
 
-# ====== CONFIG ======
-bot_token = "8409454493:AAHWuX4MWApO0MAD50_BQrrKkNsM8GisMZ0" 
-chat_id = "-1002455333744"
+# ====== CONFIG (GitHub Secrets) ======
+bot_token = os.getenv("TELEGRAM_TOKEN")
+chat_id = os.getenv("TELEGRAM_CHAT_ID")
 
 # ====== API URL-ek ======
 coingecko_url = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana,ripple,binancecoin&vs_currencies=usd&include_24hr_change=true"
