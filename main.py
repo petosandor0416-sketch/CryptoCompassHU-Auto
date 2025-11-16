@@ -88,7 +88,8 @@ def generate_post():
 • {news[1] if len(news)>1 else "—"}  
 
 🧠 Edukáció  
-A következetes stratégia sokszor jobb, mint az impulzív döntések. A volatilitás a kripto természetes része.
+A következetes stratégia sokszor jobb, mint az impulzív döntések. 
+A volatilitás a kripto természetes része.
 
 ⚠️ Ez nem befektetési tanács.
 """
